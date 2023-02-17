@@ -92,6 +92,8 @@ kops create secret --name ${NAME} sshpublickey admin -i ~/.ssh/id_rsa.pub
 # 9) Initialise your kops kubernetes cluser by running the command below
 ```sh
 kops update cluster ${NAME} --yes
+
+#kops update cluster --name reclass30kops.k8s.local --yes --admin (this was for my cluster in s3 bucket reclass30kops)
 ```
 # 10a) Validate your cluster(KOPS will take some time to create cluster ,Execute below commond after 3 or 4 mins)
 
